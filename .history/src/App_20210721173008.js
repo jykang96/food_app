@@ -5,17 +5,12 @@ import Cart from './components/Cart/Cart'
 function App() {
 
   const[isDisplayed, setIsDisplayed]= useState(false);
-  const showCart = () => {
-    setIsDisplayed(true);
-  }
-  const hideCart = () => {
-    setIsDisplayed(false)
-  }
+  
 
   return (
     <Fragment>
-      {isDisplayed && <Cart onClose={hideCart}/>}
-      <Header showCart={showCart}/>
+      <Cart />
+      <Header />
       <main>
           <Meals/>
       </main>

@@ -8,14 +8,11 @@ function App() {
   const showCart = () => {
     setIsDisplayed(true);
   }
-  const hideCart = () => {
-    setIsDisplayed(false)
-  }
 
   return (
     <Fragment>
-      {isDisplayed && <Cart onClose={hideCart}/>}
-      <Header showCart={showCart}/>
+      <Cart />
+      <Header />
       <main>
           <Meals/>
       </main>
