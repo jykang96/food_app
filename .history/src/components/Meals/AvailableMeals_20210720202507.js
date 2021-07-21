@@ -30,7 +30,7 @@ import classes from './AvailableMeals.module.css'
 const AvailableMeals = () => {
     const mealsList = DUMMY_MEALS.map(meal => <li>{meal.name}</li>);
     return (
-        <section className={classes.meals}>
+        <section>
             <ul>
                 {mealsList}
             </ul>
